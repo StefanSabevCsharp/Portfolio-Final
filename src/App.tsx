@@ -3,6 +3,9 @@ import Home from "./components/home/Home"
 import TopElement from "./components/topElement/TopElement"
 import Main from "./components/main/Main"
 import Contact from "./components/contact/Contact"
+import Resume from "./components/resume/Resume"
+import Portfolio from "./components/portfolio/Portfolio"
+import Certificates from "./components/certificates/Certificates"
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/awards" element={<Certificates />} />
           </Routes>
         </Main>
       </div>
