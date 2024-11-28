@@ -1,42 +1,30 @@
-import Navbar from "../navbar/Navbar";
+import { Link, useLocation } from "react-router";
+import navigation from "../../utils/navigation";
 
 export default function Header() {
-    return (
-        <>
-        <div className="section-bg">
-            <div className="w-full flex justify-between px-4">
-                <a href="index.html">
-                    <img
-                        className="h-[26px] lg:h-[32px]"
-                        src="images/logo/logo.png"
-                        alt="logo"
-                    />
-                </a>
-                <div className="flex items-center">
-                    {/* dark and light mode toggle */}
-                    <button id="theme-toggle" type="button" className="dark-light-btn">
-                        <i
-                            id="theme-toggle-dark-icon"
-                            className="fa-solid text-xl fa-moon hidden"
-                        />
-                        <i
-                            id="theme-toggle-light-icon"
-                            className="fa-solid fa-sun text-xl hidden"
-                        />
-                    </button>
-                    {/* mobile toggle button */}
-                    <button id="menu-toggle" type="button" className="menu-toggle-btn">
-                        <i id="menu-toggle-open-icon" className="fa-solid fa-bars text-xl " />
-                        <i
-                            id="menu-toggle-close-icon"
-                            className="fa-solid fa-xmark text-xl hidden  "
-                        />
-                    </button>
-                </div>
-            </div>
-        </div>
-        <Navbar />
-        </>
+    const locationPath = useLocation().pathname;
+    const activeLink: string = "menu-active";
+    const inactiveLink: string = "menu-item";
+  return (
+    <header className="lg:w-[560px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111]">
+    <nav className="hidden lg:block">
+        <nav className="hidden lg:block">
+            <ul className="flex">
+                {navigation.map((link, index) => (
+                    <li key={index}>
+                        {" "}
+                        <Link className={locationPath == link.route ? activeLink : inactiveLink} to={link.route}>
+                            <span className="text-xl mb-1">
+                                <i className={link.image} />
+                            </span>{" "}
+                            {link.name}{" "}
+                        </Link>
+                    </li>
+                ))}
 
-    );
+            </ul>
+        </nav>
+    </nav>
+</header>
+  );
 }
