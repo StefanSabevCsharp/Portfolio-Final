@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact"
 import Resume from "./components/resume/Resume"
 import Portfolio from "./components/portfolio/Portfolio"
 import Certificates from "./components/certificates/Certificates"
+import { ThemeProvider } from "./components/context/themeContext/ThemeContext"
 
 
 function App() {
@@ -13,19 +14,20 @@ function App() {
 
   return (
     <>
-      <div className="bg-homeBg dark:bg-homeTwoBg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
-
-        <TopElement />
-        <Main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/awards" element={<Certificates />} />
-          </Routes>
-        </Main>
-      </div>
+      <ThemeProvider>
+        <div className="bg-homeBg dark:bg-homeTwoBg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+          <TopElement />
+          <Main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/awards" element={<Certificates />} />
+            </Routes>
+          </Main>
+        </div>
+      </ThemeProvider>
     </>
   )
 }
