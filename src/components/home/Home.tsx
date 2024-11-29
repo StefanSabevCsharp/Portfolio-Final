@@ -2,197 +2,259 @@
 export default function Home() {
 
     return (
-
         <div>
-            {/* resume section start */}
-            <div className="bg-white lg:rounded-2xl dark:bg-[#111111]">
-                <div className="container sm:px-5 md:px-10 lg:px-14">
-                    <div className="py-12 px-4 md:px-0">
-                        {/* resume page title */}
-                        <h2 className="after-effect after:left-44">Resume</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6 mt-[30px]">
-                            {/* eductation start */}
-                            <div>
-                                <div className="flex items-center space-x-2 mb-4">
-                                    <i className="fa-solid text-6xl text-[#F95054] fa-graduation-cap" />
-                                    <h4 className="text-5xl dark:text-white font-medium">
-                                        {" "}
-                                        Education{" "}
-                                    </h4>
+            <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
+                <div className="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+                    {/* about page title */}
+                    <h2 className="after-effect after:left-52">About Me</h2>
+                    {/* personal info for mobile devices start */}
+                    <div className="lg:hidden">
+                        <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+                            {/* profile image  */}
+                            <img
+                                src="images/mypic.jpg"
+                                className="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto rounded-[20px] -mt-[140px]"
+                                alt="about"
+                            />
+                            <div className="pt-[100px] pb-8">
+                                <h2 className="mt-6 mb-1 text-[26px] font-semibold dark:text-white">
+                                    {" "}
+                                    Stefan Sabev
+                                </h2>
+                                <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
+                                    Fullstack Web Developer{" "}
+                                </h3>
+                                <div className="flex justify-center space-x-3">
+                                    {/* facebook icon and link */}
+                                    <a
+                                        href="https://www.facebook.com/stefan.sabev.94"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span className="socialbtn text-[#1773EA]">
+                                            <i className="fa-brands fa-facebook-f" />
+                                        </span>
+                                    </a>
+                                    {/* github icon and link */}
+                                    <a
+                                        href="https://github.com/StefanSabevCsharp"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span className="socialbtn text-[#1C9CEA]">
+                                            <i className="fa-brands fa-github" />
+                                        </span>
+                                    </a>
+
+                                    {/* linkedin icon and link */}
+                                    <a
+                                        href="https://www.linkedin.com/in/stefan-sabev-952a5620a/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span className="socialbtn text-[#0072b1]">
+                                            <i className="fa-brands fa-linkedin-in" />
+                                        </span>
+                                    </a>
                                 </div>
-                                <div className="bg-[#fff4f4] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
-                                    <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2021-2023
-                                    </span>
-                                    <h3 className="text-xl dark:text-white">
-                                        {" "}
-                                        Ph.D in Horriblensess{" "}
-                                    </h3>
-                                    <p className="dark:text-[#b7b7b7]">
-                                        {" "}
-                                        ABC University, Los Angeles, CA{" "}
-                                    </p>
+                                {/* personal info start */}
+                                <div className="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+                                    <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5">
+                                        <span className="socialbtn bg-white dark:bg-black text-[#E93B81] shadow-md">
+                                            <i className="fa-solid fa-mobile-screen-button" />
+                                        </span>
+                                        <div className="text-left ml-2.5">
+                                            <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                                                {" "}
+                                                Phone{" "}
+                                            </p>
+                                            <p className="dark:text-white">+41 79 720 51 14</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                                        <span className="socialbtn bg-white dark:bg-black text-[#6AB5B9] shadow-md">
+                                            <i className="fa-solid fa-envelope-open-text" />
+                                        </span>
+                                        <div className="text-left ml-2.5">
+                                            <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                                                {" "}
+                                                Email{" "}
+                                            </p>
+                                            <p className="dark:text-white">stevenbg91@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex border-b border-[#E3E3E3] dark:border-[#3D3A3A] py-2.5">
+                                        <span className="socialbtn bg-white dark:bg-black text-[#FD7590] shadow-md">
+                                            <i className="fa-solid fa-location-dot" />
+                                        </span>
+                                        <div className="text-left ml-2.5">
+                                            <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                                                {" "}
+                                                Location{" "}
+                                            </p>
+                                            <p className="dark:text-white">Yverdon-les-Bains, Suisse</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex py-2.5">
+                                        <span className="socialbtn bg-white dark:bg-black text-[#C17CEB] shadow-md">
+                                            <i className="fa-solid fa-calendar-days" />
+                                        </span>
+                                        <div className="text-left ml-2.5">
+                                            <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
+                                                {" "}
+                                                Birthday{" "}
+                                            </p>
+                                            <p className="dark:text-white">Sep 11, 1991</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="bg-[#fff1fb] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 dark:border-[#212425] dark:border-2">
-                                    <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2019 - Present
-                                    </span>
-                                    <h3 className="text-xl dark:text-white">
-                                        {" "}
-                                        Sr. Software Tester{" "}
-                                    </h3>
-                                    <p className="dark:text-[#b7b7b7]">Google Inc.</p>
-                                </div>
-                                <div className="py-4 pl-5 bg-[#fff4f4] dark:bg-transparent pr-3 space-y-2 rounded-lg dark:border-[#212425] dark:border-2">
-                                    <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2021
-                                    </span>
-                                    <h3 className="text-xl dark:text-white">Best Developer</h3>
-                                    <p className="dark:text-[#b7b7b7]">
-                                        {" "}
-                                        University Of Melbourne, NA{" "}
-                                    </p>
-                                </div>
-                            </div>
-                            {/* eductation end */}
-                            {/* experiment start */}
-                            <div>
-                                <div className="flex items-center space-x-2 mb-4">
-                                    <i className="fa-solid text-6xl text-[#F95054] fa-briefcase" />
-                                    <h4 className="text-5xl dark:text-white font-medium">
-                                        {" "}
-                                        Experience{" "}
-                                    </h4>
-                                </div>
-                                <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg bg-[#eef5fa] dark:bg-transparent dark:border-[#212425] dark:border-2">
-                                    <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2017-2021
-                                    </span>
-                                    <h3 className="text-xl dark:text-white">
-                                        {" "}
-                                        Computer Science{" "}
-                                    </h3>
-                                    <p className="dark:text-[#b7b7b7]">
-                                        {" "}
-                                        Imperialize Technical Institute{" "}
-                                    </p>
-                                </div>
-                                <div className="bg-[#f2f4ff] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 dark:border-[#212425] dark:border-2">
-                                    <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2015-2017
-                                    </span>
-                                    <h3 className="text-xl dark:text-white">
-                                        {" "}
-                                        Cr. Web Developer{" "}
-                                    </h3>
-                                    <p className="dark:text-[#b7b7b7]">ib-themes ltd.</p>
-                                </div>
-                                <div className="py-4 bg-[#eef5fa] dark:bg-transparent pl-5 pr-3 space-y-2 rounded-lg dark:border-[#212425] dark:border-2">
-                                    <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2008
-                                    </span>
-                                    <h3 className="text-xl dark:text-white">Best Writter</h3>
-                                    <p className="dark:text-[#b7b7b7]">
-                                        {" "}
-                                        Online Typodev Soluation Ltd.{" "}
-                                    </p>
-                                </div>
-                            </div>
-                            {/* experiment start */}
-                        </div>
-                    </div>
-                </div>
-                {/* working section start */}
-                <div className="container bg-color-810 dark:bg-[#0D0D0D] py-12 px-2 sm:px-5 md:px-10 lg:px-20">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div className="col-span-1">
-                            <h4 className="text-5xl dark:text-white font-medium mb-6">
-                                {" "}
-                                Working Skills{" "}
-                            </h4>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Web Design
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        65%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#FF6464] h-1 rounded-full"
-                                        style={{ width: "65%" }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Mobile App
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        85%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#9272d4] h-1 rounded-full"
-                                        style={{ width: "85%" }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Illustrator
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        75%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#5185d4] h-1 rounded-full"
-                                        style={{ width: "75%" }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Photoshope
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        90%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#ca56f2] h-1 rounded-full"
-                                        style={{ width: "90%" }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-span-1">
-                            <h4 className="text-5xl dark:text-white font-medium mb-8">
-                                {" "}
-                                Knowledges{" "}
-                            </h4>
-                            <div className="flex gap-y-5 gap-x-2.5 flex-wrap">
-                                <button className="resume-btn">Digital Design</button>
-                                <button className="resume-btn">Marketing</button>
-                                <button className="resume-btn">Social Media</button>
-                                <button className="resume-btn">Print</button>
-                                <button className="resume-btn">Time Management</button>
-                                <button className="resume-btn">Flexibility</button>
-                                <button className="resume-btn">Print</button>
+                                {/* personal info end */}
+                                {/* dowanload button */}
+                                <button className="dowanload-btn">
+                                    <img
+                                        className="mr-3"
+                                        src="images/icons/dowanload.png"
+                                        alt="icon"
+                                    />{" "}
+                                    Download CV
+                                </button>
                             </div>
                         </div>
                     </div>
+                    {/* personal info for mobile devices end */}
+                    <div className="lg:grid grid-cols-12 md:gap-10 pt-4 md:pt-[30px] items-center">
+                        <div className="col-span-12 space-y-2.5">
+                            <div className="lg:mr-16">
+                                <p className="text-[#44566c] dark:text-color-910 leading-7 text-lg">
+                                    Over the past two years, I have worked tirelessly to transition into the tech industry as a JavaScript developer. I successfully completed the <b>JavaScript Web Developer</b> path at SoftUni with a perfect score of 6.00 and received my diploma, demonstrating my expertise in JavaScript, DOM manipulation, RESTful APIs, and full-stack development.
+                                </p>
+                                <p className="text-[#44566c] leading-7 mt-2.5 dark:text-color-910 text-lg">
+                                    While currently employed in a different field, I am fully committed to transitioning into a career as a full-stack JavaScript developer. I am passionate about learning new technologies, building impactful solutions, and continuously growing as a developer every day.
+                                </p>
+                            </div>
+
+                            <div />
+                        </div>
+                    </div>
                 </div>
-                {/* working section end */}
+                {/* what i do section start */}
+                <div className="pb-12 px-2 sm:px-5 md:px-10 lg:px-14">
+                    <h3 className="text-[35px] dark:text-white font-bold font-robotoSlab pb-5">
+                        {" "}
+                        What I do!{" "}
+                    </h3>
+                    <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
+                        <div className="about-box bg-[#fcf4ff] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    Ui/Ux Design{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    euismod volutpat.{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="about-box bg-[#fefaf0] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon1.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    App Development{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    euismod volutpat.{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="about-box bg-[#fcf4ff] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon2.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    Photography{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    euismod volutpat.{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="about-box bg-[#fff4f4] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon3.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    Photography{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    euismod volutpat.{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="about-box bg-[#fff0f8] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon4.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    Managment{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    euismod volutpat.{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="about-box bg-[#f3faff] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon5.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    Web Development{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                    euismod volutpat.{" "}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 {/* footer start */}
                 <footer
                     className="overflow-hidden rounded-b-2xl"
@@ -207,17 +269,15 @@ export default function Home() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
+                            {" "}
                             ib-themes
                         </a>
                         .{" "}
                     </p>
                 </footer>
-                {/* footer end */}
+                {/* footer section end */}
             </div>
-            {/* resume section start */}
         </div>
-
-
 
     );
 }
