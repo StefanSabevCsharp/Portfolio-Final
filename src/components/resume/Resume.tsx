@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Resume() {
+    const { t } = useTranslation();
     return (
         <div>
             {/* resume section start */}
@@ -6,7 +9,7 @@ export default function Resume() {
                 <div className="container sm:px-5 md:px-10 lg:px-14">
                     <div className="py-12 px-4 md:px-0">
                         {/* resume page title */}
-                        <h2 className="after-effect after:left-44">Resume</h2>
+                        <h2 className="after-effect after:left-244">{t('resume')}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6 mt-[30px]">
                             {/* eductation start */}
                             <div>
@@ -14,37 +17,37 @@ export default function Resume() {
                                     <i className="fa-solid text-6xl text-[#F95054] fa-graduation-cap" />
                                     <h4 className="text-5xl dark:text-white font-medium">
                                         {" "}
-                                        Education{" "}
+                                        {t('education')}{" "}
                                     </h4>
                                 </div>
                                 <div className="bg-[#fff4f4] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
                                     <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2021-2023
+                                        2023-2024
                                     </span>
                                     <h3 className="text-xl dark:text-white">
                                         {" "}
-                                        Ph.D in Horriblensess{" "}
+                                        {t('education_1')}{" "}
                                     </h3>
                                     <p className="dark:text-[#b7b7b7]">
                                         {" "}
-                                        ABC University, Los Angeles, CA{" "}
+                                        {t('education_1_text')}{" "}
                                     </p>
                                 </div>
                                 <div className="bg-[#fff1fb] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 dark:border-[#212425] dark:border-2">
                                     <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2019 - Present
+                                        2022-2023
                                     </span>
-                                    <h3 className="text-xl dark:text-white"> Sr. Software Tester </h3>
-                                    <p className="dark:text-[#b7b7b7]">Google Inc.</p>
+                                    <h3 className="text-xl dark:text-white">{t('education_2')} </h3>
+                                    <p className="dark:text-[#b7b7b7]">{t('education_2_text')}</p>
                                 </div>
                                 <div className="py-4 pl-5 bg-[#fff4f4] dark:bg-transparent pr-3 space-y-2 rounded-lg dark:border-[#212425] dark:border-2">
                                     <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2021
+                                        2006-2010
                                     </span>
-                                    <h3 className="text-xl dark:text-white">Best Developer</h3>
+                                    <h3 className="text-xl dark:text-white">{t('education_3')}</h3>
                                     <p className="dark:text-[#b7b7b7]">
                                         {" "}
-                                        University Of Melbourne, NA{" "}
+                                        {t('education_3_text')}{" "}
                                     </p>
                                 </div>
                             </div>
@@ -55,34 +58,34 @@ export default function Resume() {
                                     <i className="fa-solid text-6xl text-[#F95054] fa-briefcase" />
                                     <h4 className="text-5xl dark:text-white font-medium">
                                         {" "}
-                                        Experience{" "}
+                                        {t('experience')}{" "}
                                     </h4>
                                 </div>
                                 <div className="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg bg-[#eef5fa] dark:bg-transparent dark:border-[#212425] dark:border-2">
                                     <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2017-2021
+                                        2021-2024
                                     </span>
-                                    <h3 className="text-xl dark:text-white"> Computer Science </h3>
+                                    <h3 className="text-xl dark:text-white"> {t('experience_1')}</h3>
                                     <p className="dark:text-[#b7b7b7]">
                                         {" "}
-                                        Imperialize Technical Institute{" "}
+                                        {t('experience_1_text')}{" "}
                                     </p>
                                 </div>
                                 <div className="bg-[#f2f4ff] dark:bg-transparent py-4 pl-5 pr-3 space-y-2 rounded-lg mb-6 dark:border-[#212425] dark:border-2">
                                     <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2015-2017
+                                        2016-2021
                                     </span>
-                                    <h3 className="text-xl dark:text-white"> Cr. Web Developer </h3>
-                                    <p className="dark:text-[#b7b7b7]">ib-themes ltd.</p>
+                                    <h3 className="text-xl dark:text-white"> {t('experience_2')} </h3>
+                                    <p className="dark:text-[#b7b7b7]">{t('experience_2_text')}</p>
                                 </div>
                                 <div className="py-4 bg-[#eef5fa] dark:bg-transparent pl-5 pr-3 space-y-2 rounded-lg dark:border-[#212425] dark:border-2">
                                     <span className="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                                        2008
+                                        2013-2015
                                     </span>
-                                    <h3 className="text-xl dark:text-white">Best Writter</h3>
+                                    <h3 className="text-xl dark:text-white">{t('experience_3')}</h3>
                                     <p className="dark:text-[#b7b7b7]">
                                         {" "}
-                                        Online Typodev Soluation Ltd.{" "}
+                                        {t('experience_3_text')}{" "}
                                     </p>
                                 </div>
                             </div>
@@ -104,20 +107,20 @@ export default function Resume() {
                                         Web Design
                                     </span>
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        65%
+                                        75%
                                     </span>
                                 </div>
                                 <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
                                     <div
                                         className="bg-[#FF6464] h-1 rounded-full"
-                                        style={{ width: "65%" }}
+                                        style={{ width: "75%" }}
                                     />
                                 </div>
                             </div>
                             <div className="mb-5">
                                 <div className="flex justify-between mb-1">
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Mobile App
+                                        BackEnd
                                     </span>
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
                                         85%
@@ -133,23 +136,7 @@ export default function Resume() {
                             <div className="mb-5">
                                 <div className="flex justify-between mb-1">
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Illustrator
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        75%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#5185d4] h-1 rounded-full"
-                                        style={{ width: "75%" }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Photoshope
+                                        Javascript
                                     </span>
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
                                         90%
@@ -157,8 +144,24 @@ export default function Resume() {
                                 </div>
                                 <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
                                     <div
-                                        className="bg-[#ca56f2] h-1 rounded-full"
+                                        className="bg-[#5185d4] h-1 rounded-full"
                                         style={{ width: "90%" }}
+                                    />
+                                </div>
+                            </div>
+                            <div className="mb-5">
+                                <div className="flex justify-between mb-1">
+                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
+                                        ReactJS
+                                    </span>
+                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
+                                        85%
+                                    </span>
+                                </div>
+                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
+                                    <div
+                                        className="bg-[#ca56f2] h-1 rounded-full"
+                                        style={{ width: "85%" }}
                                     />
                                 </div>
                             </div>
@@ -169,38 +172,23 @@ export default function Resume() {
                                 Knowledges{" "}
                             </h4>
                             <div className="flex gap-y-5 gap-x-2.5 flex-wrap">
-                                <button className="resume-btn">Digital Design</button>
-                                <button className="resume-btn">Marketing</button>
-                                <button className="resume-btn">Social Media</button>
-                                <button className="resume-btn">Print</button>
-                                <button className="resume-btn">Time Management</button>
-                                <button className="resume-btn">Flexibility</button>
-                                <button className="resume-btn">Print</button>
+                                <button className="resume-btn">Javascript</button>
+                                <button className="resume-btn">ReactJS</button>
+                                <button className="resume-btn">ExpressKS</button>
+                                <button className="resume-btn">MongoDB</button>
+                                <button className="resume-btn">MERN Stack</button>
+                                <button className="resume-btn">Node.js</button>
+                                <button className="resume-btn">HTML5</button>
+                                <button className="resume-btn">CSS3</button>
+                                <button className="resume-btn">Tailwind CSS</button>
+                                <button className="resume-btn">REST APIs</button>
+                                <button className="resume-btn">Git</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* working section end */}
-                {/* footer start */}
-                <footer
-                    className="overflow-hidden rounded-b-2xl"
-                    style={{ background: "transparent" }}
-                >
-                    <p className="text-center py-6 text-gray-lite dark:text-color-910">
-                        {" "}
-                        © 2022 All Rights Reserved by{" "}
-                        <a
-                            className="hover:text-[#FA5252] duration-300 transition"
-                            href="https://themeforest.net/user/ib-themes"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            ib-themes
-                        </a>
-                        .{" "}
-                    </p>
-                </footer>
-                {/* footer end */}
+
             </div>
             {/* resume section start */}
         </div>

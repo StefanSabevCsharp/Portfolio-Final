@@ -1,12 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 
 export default function Home() {
+
+    const { t } = useTranslation();
+
 
     return (
         <div>
             <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
                 <div className="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
                     {/* about page title */}
-                    <h2 className="after-effect after:left-52">About Me</h2>
+                    <h2 className="after-effect after:left-252">{t('about')}</h2>
                     {/* personal info for mobile devices start */}
                     <div className="lg:hidden">
                         <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
@@ -22,7 +27,7 @@ export default function Home() {
                                     Stefan Sabev
                                 </h2>
                                 <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
-                                    Fullstack Web Developer{" "}
+                                    {t('profession')}{" "}
                                 </h3>
                                 <div className="flex justify-center space-x-3">
                                     {/* facebook icon and link */}
@@ -66,7 +71,7 @@ export default function Home() {
                                         <div className="text-left ml-2.5">
                                             <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                                                 {" "}
-                                                Phone{" "}
+                                                {t('phone')}{" "}
                                             </p>
                                             <p className="dark:text-white">+41 79 720 51 14</p>
                                         </div>
@@ -78,7 +83,7 @@ export default function Home() {
                                         <div className="text-left ml-2.5">
                                             <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                                                 {" "}
-                                                Email{" "}
+                                                {t('email')}{" "}
                                             </p>
                                             <p className="dark:text-white">stevenbg91@gmail.com</p>
                                         </div>
@@ -90,9 +95,9 @@ export default function Home() {
                                         <div className="text-left ml-2.5">
                                             <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                                                 {" "}
-                                                Location{" "}
+                                                {t('location')}{" "}
                                             </p>
-                                            <p className="dark:text-white">Yverdon-les-Bains, Suisse</p>
+                                            <p className="dark:text-white">{t('location_text')}</p>
                                         </div>
                                     </div>
                                     <div className="flex py-2.5">
@@ -102,7 +107,7 @@ export default function Home() {
                                         <div className="text-left ml-2.5">
                                             <p className="text-xs text-[#44566C] dark:text-[#A6A6A6]">
                                                 {" "}
-                                                Birthday{" "}
+                                                {t('birthday')}{" "}
                                             </p>
                                             <p className="dark:text-white">Sep 11, 1991</p>
                                         </div>
@@ -116,7 +121,7 @@ export default function Home() {
                                         src="images/icons/dowanload.png"
                                         alt="icon"
                                     />{" "}
-                                    Download CV
+                                    {t('download')}
                                 </button>
                             </div>
                         </div>
@@ -126,10 +131,10 @@ export default function Home() {
                         <div className="col-span-12 space-y-2.5">
                             <div className="lg:mr-16">
                                 <p className="text-[#44566c] dark:text-color-910 leading-7 text-lg">
-                                    Over the past two years, I have worked tirelessly to transition into the tech industry as a JavaScript developer. I successfully completed the <b>JavaScript Web Developer</b> path at SoftUni with a perfect score of 6.00 and received my diploma, demonstrating my expertise in JavaScript, DOM manipulation, RESTful APIs, and full-stack development.
+                                    {t('about_first')}
                                 </p>
                                 <p className="text-[#44566c] leading-7 mt-2.5 dark:text-color-910 text-lg">
-                                    While currently employed in a different field, I am fully committed to transitioning into a career as a full-stack JavaScript developer. I am passionate about learning new technologies, building impactful solutions, and continuously growing as a developer every day.
+                                    {t('about_second')}
                                 </p>
                             </div>
 
@@ -141,96 +146,23 @@ export default function Home() {
                 <div className="pb-12 px-2 sm:px-5 md:px-10 lg:px-14">
                     <h3 className="text-[35px] dark:text-white font-bold font-robotoSlab pb-5">
                         {" "}
-                        What I do!{" "}
+                        {t('what_i_do')}{" "}
                     </h3>
                     <div className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
                         <div className="about-box bg-[#fcf4ff] dark:bg-transparent">
                             <img
                                 className="w-10 h-10 object-contain block"
-                                src="images/icons/icon.svg"
+                                src="images/icons/react.svg"
                                 alt="icon"
                             />
                             <div className="space-y-2">
                                 <h3 className="dark:text-white text-[22px] font-semibold">
                                     {" "}
-                                    Ui/Ux Design{" "}
+                                   {t('title_1')}{" "}
                                 </h3>
                                 <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
                                     {" "}
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                    euismod volutpat.{" "}
-                                </p>
-                            </div>
-                        </div>
-                        <div className="about-box bg-[#fefaf0] dark:bg-transparent">
-                            <img
-                                className="w-10 h-10 object-contain block"
-                                src="images/icons/icon1.svg"
-                                alt="icon"
-                            />
-                            <div className="space-y-2">
-                                <h3 className="dark:text-white text-[22px] font-semibold">
-                                    {" "}
-                                    App Development{" "}
-                                </h3>
-                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
-                                    {" "}
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                    euismod volutpat.{" "}
-                                </p>
-                            </div>
-                        </div>
-                        <div className="about-box bg-[#fcf4ff] dark:bg-transparent">
-                            <img
-                                className="w-10 h-10 object-contain block"
-                                src="images/icons/icon2.svg"
-                                alt="icon"
-                            />
-                            <div className="space-y-2">
-                                <h3 className="dark:text-white text-[22px] font-semibold">
-                                    {" "}
-                                    Photography{" "}
-                                </h3>
-                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
-                                    {" "}
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                    euismod volutpat.{" "}
-                                </p>
-                            </div>
-                        </div>
-                        <div className="about-box bg-[#fff4f4] dark:bg-transparent">
-                            <img
-                                className="w-10 h-10 object-contain block"
-                                src="images/icons/icon3.svg"
-                                alt="icon"
-                            />
-                            <div className="space-y-2">
-                                <h3 className="dark:text-white text-[22px] font-semibold">
-                                    {" "}
-                                    Photography{" "}
-                                </h3>
-                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
-                                    {" "}
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                    euismod volutpat.{" "}
-                                </p>
-                            </div>
-                        </div>
-                        <div className="about-box bg-[#fff0f8] dark:bg-transparent">
-                            <img
-                                className="w-10 h-10 object-contain block"
-                                src="images/icons/icon4.svg"
-                                alt="icon"
-                            />
-                            <div className="space-y-2">
-                                <h3 className="dark:text-white text-[22px] font-semibold">
-                                    {" "}
-                                    Managment{" "}
-                                </h3>
-                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
-                                    {" "}
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                    euismod volutpat.{" "}
+                                    {t('title_1_text')}{" "}
                                 </p>
                             </div>
                         </div>
@@ -243,39 +175,89 @@ export default function Home() {
                             <div className="space-y-2">
                                 <h3 className="dark:text-white text-[22px] font-semibold">
                                     {" "}
-                                    Web Development{" "}
+                                    {t('title_2')}{" "}
                                 </h3>
                                 <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
                                     {" "}
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                                    euismod volutpat.{" "}
+                                    {t('title_2_text')}{" "}
+                                </p>
+                            </div>
+                        </div>
+                        <div className="about-box bg-[#fff4f4] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/mongo.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    {t('title_3')}{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    {t('title_3_text')}{" "}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="about-box bg-[#fefaf0] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon1.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    {t('title_4')}{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    {t('title_4_text')}{" "}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="about-box bg-[#fff0f8] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon4.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    {t('title_5')}{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    {t('title_5_text')}{" "}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="about-box bg-[#fcf4ff] dark:bg-transparent">
+                            <img
+                                className="w-10 h-10 object-contain block"
+                                src="images/icons/icon.svg"
+                                alt="icon"
+                            />
+                            <div className="space-y-2">
+                                <h3 className="dark:text-white text-[22px] font-semibold">
+                                    {" "}
+                                    {t('title_6')}{" "}
+                                </h3>
+                                <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
+                                    {" "}
+                                    {t('title_6_text')}{" "}
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                {/* footer start */}
-                <footer
-                    className="overflow-hidden rounded-b-2xl"
-                    style={{ background: "transparent" }}
-                >
-                    <p className="text-center py-6 text-gray-lite dark:text-color-910">
-                        {" "}
-                        © 2022 All Rights Reserved by{" "}
-                        <a
-                            className="hover:text-[#FA5252] duration-300 transition"
-                            href="https://themeforest.net/user/ib-themes"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {" "}
-                            ib-themes
-                        </a>
-                        .{" "}
-                    </p>
-                </footer>
-                {/* footer section end */}
+
             </div>
         </div>
 
