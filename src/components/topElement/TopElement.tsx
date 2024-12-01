@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import Navbar from "../navbar/Navbar";
 import { ThemeContext } from "../context/themeContext/ThemeContext";
+import { LanguageContext } from "../context/languageContext/LanguageContext";
 
 export default function TopElement() {
     const { theme, toggleTheme } = useContext(ThemeContext);
+    const { language, toggleLanguage } = useContext(LanguageContext);
     console.log(toggleTheme);
     console.log(theme);
     return (
@@ -18,9 +20,9 @@ export default function TopElement() {
                         />
 
                     </a>
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-5">
                         {/* dark and light mode toggle */}
-                        <button onClick={() => toggleTheme()} id="theme-toggle" type="button" className="dark-light-btn">
+                        <button onClick={() => toggleLanguage()} id="theme-toggle" type="button" className="dark-light-btn">
                             {theme == "dark" ? <i
                                 id="theme-toggle-light-icon"
                                 className="fa-solid fa-sun text-xl"
@@ -29,6 +31,9 @@ export default function TopElement() {
                                 className="fa-solid text-xl fa-moon"
                             />}
 
+                        </button>
+                        <button onClick={() => {toggleLanguage()}} className="dark-light-btn">
+                         {language == "en" ? <span>FR</span> : <span>EN</span>}
                         </button>
                         {/* mobile toggle button */}
                         <button id="menu-toggle" type="button" className="menu-toggle-btn">
