@@ -7,6 +7,7 @@ import "../public/css/vendor/slick.css"
 import "../public/css/vendor/jquery.modal.min.css"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter } from 'react-router'
+import "./i18n.ts"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
