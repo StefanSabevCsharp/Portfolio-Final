@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { skills } from "../../utils/skills";
 
 export default function Resume() {
     const { t } = useTranslation();
@@ -101,70 +102,25 @@ export default function Resume() {
                                 {" "}
                                 Working Skills{" "}
                             </h4>
-                            <div className="mb-5">
+                            {skills.map((skill,index) => (
+                                <div key={index} className="mb-5">
                                 <div className="flex justify-between mb-1">
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Web Design
+                                       {skill.name}
                                     </span>
                                     <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        75%
+                                        {skill.level}%
                                     </span>
                                 </div>
                                 <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
                                     <div
-                                        className="bg-[#FF6464] h-1 rounded-full"
-                                        style={{ width: "75%" }}
+                                        className={skill.style}
+                                        style={{ width:  `${skill.level}%` }}
                                     />
                                 </div>
                             </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        BackEnd
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        85%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#9272d4] h-1 rounded-full"
-                                        style={{ width: "85%" }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        Javascript
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        90%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#5185d4] h-1 rounded-full"
-                                        style={{ width: "90%" }}
-                                    />
-                                </div>
-                            </div>
-                            <div className="mb-5">
-                                <div className="flex justify-between mb-1">
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6]">
-                                        ReactJS
-                                    </span>
-                                    <span className=" font-semibold text-[#526377] dark:text-[#A6A6A6">
-                                        85%
-                                    </span>
-                                </div>
-                                <div className="w-full bg-[#edf2f2] rounded-full h-1 dark:bg-[#1c1c1c]">
-                                    <div
-                                        className="bg-[#ca56f2] h-1 rounded-full"
-                                        style={{ width: "85%" }}
-                                    />
-                                </div>
-                            </div>
+                            ))}
+                           
                         </div>
                         <div className="col-span-1">
                             <h4 className="text-5xl dark:text-white font-medium mb-8">
