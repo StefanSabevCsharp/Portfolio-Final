@@ -22,7 +22,7 @@ export default function TopElement() {
                     </a>
                     <div className="flex items-center gap-5">
                         {/* dark and light mode toggle */}
-                        <button onClick={() => toggleLanguage()} id="theme-toggle" type="button" className="dark-light-btn">
+                        <button onClick={() => toggleTheme()} id="theme-toggle" type="button" className="dark-light-btn">
                             {theme == "dark" ? <i
                                 id="theme-toggle-light-icon"
                                 className="fa-solid fa-sun text-xl"
