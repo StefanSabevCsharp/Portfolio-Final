@@ -1,8 +1,10 @@
 import { createContext, useEffect, useState } from "react";
 import i18n from "../../../i18n";
 
+type Language = "en" | "fr";
+
 type LanguageContextType = {
-    language: string;
+    language: Language;
     toggleLanguage: () => void;
 }
 
@@ -19,7 +21,7 @@ export const LanguageProvider = ({children} : {children : React.ReactNode}) => {
     const [language, setLanguage] = useState(() => {
         const savedLanguage = localStorage.getItem("language");
         return savedLanguage === "en" || savedLanguage === "fr"
-            ? savedLanguage
+            ? (savedLanguage as Language)
             : defaultLanguage.language;
 
     });
