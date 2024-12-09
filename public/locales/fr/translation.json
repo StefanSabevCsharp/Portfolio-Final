@@ -1,0 +1,57 @@
+{
+  "about_first": "Au cours des deux dernières années, j'ai travaillé sans relâche pour me reconvertir dans l'industrie technologique en tant que développeur JavaScript. J'ai terminé avec succès le parcours Développeur Web JavaScript à SoftUni avec un score parfait de 6.00 et obtenu mon diplôme, démontrant mon expertise en JavaScript, manipulation DOM, APIs RESTful et développement full-stack.",
+  "about_second": "Bien que je sois actuellement employé dans un autre domaine, je suis pleinement engagé à me reconvertir en développeur full-stack JavaScript. Je suis passionné par l'apprentissage de nouvelles technologies, la création de solutions impactantes et l'amélioration continue en tant que développeur chaque jour.",
+  "about": "À propos de moi",
+  "profession": "Développeur Web Fullstack",
+  "phone": "Téléphone",
+  "email": "Email",
+  "location": "Localisation",
+  "location_text": "Yverdon-les-Bains, Suisse",
+  "birthday": "Date de naissance",
+  "download": "Télécharger le CV",
+  "what_i_do": "Ce que je fais !",
+  
+  "title_1": "Développement JavaScript & React",
+  "title_1_text": "Création d'applications web interactives et performantes avec JavaScript et React. Utilisation de bibliothèques et frameworks modernes pour construire des interfaces utilisateur dynamiques et améliorer la fonctionnalité globale.",
+  
+  "title_2": "Développement Full-Stack",
+  "title_2_text": "Création d'applications web dynamiques et basées sur les données avec une expertise en technologies front-end et back-end. Des interfaces utilisateur à la logique côté serveur, je crée des expériences fluides qui produisent des résultats.",
+  
+  "title_3": "Développement Backend avec Express & MongoDB",
+  "title_3_text": "Création de backends rapides et évolutifs avec Express et MongoDB, développement d'APIs RESTful efficaces et gestion des données avec facilité.",
+  
+  "title_4": "Intégration d'APIs RESTful",
+  "title_4_text": "Connexion transparente des applications front-end avec les services back-end pour offrir des expériences utilisateur dynamiques et basées sur les données.",
+  
+  "title_5": "Développement E-commerce",
+  "title_5_text": "Création de plateformes e-commerce sécurisées et riches en fonctionnalités avec une gestion fluide des produits, une intégration des paiements et une expérience d'achat conviviale.",
+  
+  "title_6": "Développement Web Responsive",
+  "title_6_text": "Création de sites web adaptés à tout type d'appareil, garantissant une expérience optimale sur ordinateurs, tablettes et écrans mobiles.",
+  
+  "resume": "CV",
+  "education": "Éducation",
+  "education_1": "Développeur Web JavaScript",
+  "education_1_text": "SoftUni",
+  "education_2": "C# Avancé",
+  "education_2_text": "SoftUni",
+  "education_3": "Technologies des Télécommunications",
+  "education_3_text": "Lycée des Télécommunications",
+  
+  "experience": "Expérience",
+  "experience_1": "Soudeur",
+  "experience_1_text": "Ramelet fils, Ecublens, Suisse",
+  "experience_2": "Expert en Contrôle de Soudage",
+  "experience_2_text": "Hraninvest, Stara Zagora, Bulgarie",
+  "experience_3": "Ventes en Ligne",
+  "experience_3_text": "Entreprise personnelle, Stara Zagora, Bulgarie",
+  
+  "portfolio": "Portfolio",
+  "project": "Projet",
+  "languages": "Langues",
+  "client": "Client",
+  "preview": "Aperçu",
+  "link": "Lien vers le projet",
+  "link-to-credentials": "Lien vers les informations d'identification",
+  "credentials": "Informations d'identification"
+}

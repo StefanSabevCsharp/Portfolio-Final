@@ -1,0 +1,60 @@
+{
+    "about_first": "Over the past two years, I have worked tirelessly to transition into the tech industry as a JavaScript developer. I successfully completed the JavaScript Web Developer path at SoftUni with a perfect score of 6.00 and received my diploma, demonstrating my expertise in JavaScript, DOM manipulation, RESTful APIs, and full-stack development.",
+    "about_second": "While currently employed in a different field, I am fully committed to transitioning into a career as a full-stack JavaScript developer. I am passionate about learning new technologies, building impactful solutions, and continuously growing as a developer every day.",
+    "about": "About Me",
+    "profession": "Fullstack Web Developer",
+    "phone": "Phone",
+    "email" : "Email",
+    "location": "Location",
+    "location_text": "Yverdon-les-Bains, Switzerland",
+    "birthday": "Birthday",
+    "download": "Download CV",
+    "what_i_do": " What I do!",
+    
+    "title_1": "JavaScript & React Development",
+    "title_1_text": "Crafting interactive and high-performance web applications using JavaScript and React. Leveraging modern libraries and frameworks to build dynamic user interfaces and enhance overall functionality.",
+    
+    "title_2": "Full-Stack Development",
+    "title_2_text": "Building dynamic, data-driven web applications with expertise in both front-end and back-end technologies. From user interfaces to server-side logic, I create seamless experiences that drive results.",
+    
+    "title_3": "Express & MongoDB Backend Development",
+    "title_3_text": "Create fast and scalable backends with Express and MongoDB, building efficient RESTful APIs and managing data with ease.",
+    
+    "title_4": "RESTful API Integration",
+    "title_4_text": "Seamlessly connecting front-end applications with back-end services to deliver dynamic and data-driven user experiences.",
+    
+    "title_5": "E-commerce Development",
+    "title_5_text": "Build secure and feature-rich e-commerce platforms with seamless product management, payment integration, and user-friendly shopping experiences.",
+    
+    "title_6": "Responsive Web Development",
+    "title_6_text": "Creating user-friendly websites that adapt seamlessly to any device, ensuring an optimal experience across desktops, tablets, and mobile screens.", 
+
+    "resume" : "Resume",
+    "education": "Education",
+    "education_1": "JavaScript Web Developer",
+    "education_1_text": "SoftUni",
+    "education_2": "C# Advanced",
+    "education_2_text": "SoftUni",
+    "education_3": "Telecommunication Technologies",
+    "education_3_text": "High School of Telecommunications",
+
+    "experience": "Experience",
+    "experience_1": "Welder",
+    "experience_1_text": "Ramelet fils, Ecublens, Switzerland",
+    "experience_2": "Welding Control Expert",
+    "experience_2_text": "Hraninvest, Stara Zagora, Bulgaria",
+    "experience_3": "Online Sales",
+    "experience_3_text": "Personal Business, Stara Zagora, Bulgaria",
+
+    "portfolio" : "Portfolio",
+    "project" : "Project",
+    "languages" : "Languages",
+    "client" : "Client",
+    "preview" : "Preview",
+    "link" :"Link to Project",
+    "link-to-credentials" : "Link to Credentials",
+    "credentials" : "Credentials"
+
+
+  }
+  
