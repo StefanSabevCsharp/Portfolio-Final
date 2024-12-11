@@ -100,7 +100,7 @@ export default function Resume() {
                         <div className="col-span-1">
                             <h4 className="text-5xl dark:text-white font-medium mb-6">
                                 {" "}
-                                Working Skills{" "}
+                                {t('working-skills')}{" "}
                             </h4>
                             {skills.map((skill,index) => (
                                 <div key={index} className="mb-5">
@@ -125,7 +125,7 @@ export default function Resume() {
                         <div className="col-span-1">
                             <h4 className="text-5xl dark:text-white font-medium mb-8">
                                 {" "}
-                                Knowledges{" "}
+                                {t('knowledges')}{" "}
                             </h4>
                             <div className="flex gap-y-5 gap-x-2.5 flex-wrap">
                                 <button className="resume-btn">Javascript</button>
