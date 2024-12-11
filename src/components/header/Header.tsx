@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router";
-import navigation from "../../utils/navigation";
+import useNav from "../../utils/navigation";
 
 export default function Header() {
+    const {navigation} = useNav();
     const locationPath = useLocation().pathname;
     const activeLink: string = "menu-active";
     const inactiveLink: string = "menu-item";

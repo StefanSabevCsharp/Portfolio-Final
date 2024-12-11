@@ -53,5 +53,22 @@
   "preview": "Aperçu",
   "link": "Lien vers le projet",
   "link-to-credentials": "Lien vers les informations d'identification",
-  "credentials": "Informations d'identification"
+  "credentials": "Informations d'identification",
+  "navigation": {
+    "about": "À propos",
+    "resume": "CV",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "awards": "Certificats"
+  },
+  "working-skills": "Compétences de travail",
+  "knowledges": "Connaissances",
+  "contact1": "Je suis toujours ouvert au contact",  
+  "contact2": "concernant notre futur projet ensemble." ,
+  "submit": "Envoyer",
+  "submitted": "Envoyé",
+  "sending" : "Envoi en cours...",
+  "nameContact" : "Nom",
+  "emailContact" : "Email",
+  "messageContact" : "Message"
 }

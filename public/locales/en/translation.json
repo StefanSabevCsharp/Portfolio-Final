@@ -53,7 +53,24 @@
     "preview" : "Preview",
     "link" :"Link to Project",
     "link-to-credentials" : "Link to Credentials",
-    "credentials" : "Credentials"
+    "credentials" : "Credentials",
+    "navigation": {
+      "about": "About Me",
+      "resume": "Resume",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "awards": "Awards"
+    },
+    "working-skills": "Working Skills",
+    "knowledges": "Knowledges", 
+    "contact1" : " I'm always open for contact",
+    "contact2" : " regarding our future project together.",
+    "submit" : "Submit",
+    "submitted" : "Submitted",
+    "sending" : "Sending...",
+    "nameContact" : "Name",
+    "emailContact" : "Email",
+    "messageContact" : "Message"
 
 
   }
