@@ -66,35 +66,34 @@ export default function Portfolio() {
                                     <div className="modal-container fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center">
                                         <div
                                             id="modal-content"
-                                            className="modal-content bg-white dark:bg-[#111111] p-6 rounded-lg max-w-2xl w-full overflow-y-auto relative"
+                                            className="modal-content bg-white dark:bg-[#111111] p-4 rounded-lg max-w-xl w-full overflow-y-auto relative"
                                         >
-
                                             <a
                                                 onClick={() => setCurrentlyOpen(null)}
                                                 className="close bg-close-light dark:bg-close-dark "
                                             >
                                                 Close
                                             </a>
-                                            <h2 className="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">
+                                            <h2 className="text-[#ef4060] dark:hover:text-[#FA5252] text-3xl text-center font-bold">
                                                 {projectTitle}
                                             </h2>
-                                            <div className="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                                            <div className="grid grid-cols-1 lg:grid-cols-2 my-4 pr-2">
                                                 <div className="space-y-2">
-                                                    <p className="dark:text-white flex items-center text-[15px] sm:text-lg">
+                                                    <p className="dark:text-white flex items-center text-[14px] sm:text-lg">
                                                         <i className="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl" />
                                                         {t('project')} :&nbsp;<span className="font-medium">{projectTitle}</span>
                                                     </p>
-                                                    <p className="dark:text-white flex items-center text-[15px] sm:text-lg">
+                                                    <p className="dark:text-white flex items-center text-[14px] sm:text-lg">
                                                         <i className="fa-solid fa-code text-lg mr-2 hidden sm:block" />
                                                         {t('languages')} :&nbsp;<span className="font-medium">{`${project.techStack.join(", ")}`}</span>
                                                     </p>
                                                 </div>
                                                 <div className="space-y-2">
-                                                    <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-lg">
+                                                    <p className="dark:text-white flex items-center mt-2 lg:mt-0 text-[14px] sm:text-lg">
                                                         <i className="fa-regular fa-user text-lg mr-2 hidden sm:block" />
                                                         {t('client')} :&nbsp;<span className="font-medium">{"Personal Project"}</span>
                                                     </p>
-                                                    <p className="dark:text-white flex items-center text-[15px] sm:text-lg">
+                                                    <p className="dark:text-white flex items-center text-[14px] sm:text-lg">
                                                         <i className="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block" />
                                                         {t('preview')} :&nbsp;
                                                         <span
@@ -112,10 +111,10 @@ export default function Portfolio() {
                                                     </p>
                                                 </div>
                                             </div>
-                                            <p className="dark:text-white text-lg sm:text-xl">{projectDescription}</p>
-                                            <div className="pr-3">
+                                            <p className="dark:text-white text-base sm:text-lg">{projectDescription}</p>
+                                            <div className="pr-2">
                                                 <img
-                                                    className="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
+                                                    className="w-full md:h-[350px] h-auto object-cover rounded-xl mt-4"
                                                     src={project.image}
                                                     alt="portfolio"
                                                 />
@@ -123,6 +122,7 @@ export default function Portfolio() {
                                         </div>
                                     </div>
                                 )}
+
                             </div>
                         );
                     })}
