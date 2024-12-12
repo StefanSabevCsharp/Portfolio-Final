@@ -15,7 +15,7 @@ export default function TopElement() {
                     <a href="index.html">
                         <img
                             className="h-[26px] lg:h-[32px]"
-                            src="images/logo/logo.png"
+                            src="images/logo/portfolio-logo.png"
                             alt="logo"
                         />
 
