@@ -1,10 +1,10 @@
-import { t } from "i18next";
+
 import SideContacts from "./sideContacts/SideContacts";
 import { useTranslation } from "react-i18next";
 
 export default function Sidebar() {
-    const {t} = useTranslation();
-    
+    const { t } = useTranslation();
+
     return (
         <div className="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44">
             <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-[#111111] px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
@@ -20,7 +20,7 @@ export default function Sidebar() {
                         Stefan Sabev{" "}
                     </h1>
                     <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]">
-                       {t('profession')}{" "}
+                        {t('profession')}{" "}
                     </h3>
                     <div className="flex justify-center space-x-3">
                         {/* facebook icon and link */}
@@ -43,7 +43,7 @@ export default function Sidebar() {
                                 <i className="fa-brands fa-github" />
                             </span>
                         </a>
-                        
+
                         {/* linkedin icon and link */}
                         <a
                             href="https://www.linkedin.com/in/stefan-sabev-952a5620a/"
@@ -55,12 +55,16 @@ export default function Sidebar() {
                             </span>
                         </a>
                     </div>
-                   <SideContacts />
+                    <SideContacts />
                     {/* dowanload button */}
-                    <button className="dowanload-btn">
-                        <img className="mr-3" src="images/icons/dowanload.png" alt="icon" />{" "}
-                       {t('download')}{" "}
-                    </button>
+                    <a
+                        href="/public/assets/Stefan Sabev Resume.pdf"
+                        download="Stefan Sabev Resume.pdf">
+                        <button className="dowanload-btn">
+                            <img className="mr-3" src="images/icons/dowanload.png" alt="icon" />{" "}
+                            {t('download')}{" "}
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

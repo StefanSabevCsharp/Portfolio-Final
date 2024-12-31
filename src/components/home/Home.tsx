@@ -115,14 +115,18 @@ export default function Home() {
                                 </div>
                                 {/* personal info end */}
                                 {/* dowanload button */}
-                                <button className="dowanload-btn">
-                                    <img
-                                        className="mr-3"
-                                        src="images/icons/dowanload.png"
-                                        alt="icon"
-                                    />{" "}
-                                    {t('download')}
-                                </button>
+                                <a
+                                    href="/public/assets/Stefan Sabev Resume.pdf"
+                                    download="Stefan Sabev Resume.pdf">
+                                    <button className="dowanload-btn">
+                                        <img
+                                            className="mr-3"
+                                            src="images/icons/dowanload.png"
+                                            alt="icon"
+                                        />{" "}
+                                        {t('download')}
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +162,7 @@ export default function Home() {
                             <div className="space-y-2">
                                 <h3 className="dark:text-white text-[22px] font-semibold">
                                     {" "}
-                                   {t('title_1')}{" "}
+                                    {t('title_1')}{" "}
                                 </h3>
                                 <p className="leading-8 text-gray-lite dark:text-[#A6A6A6]">
                                     {" "}

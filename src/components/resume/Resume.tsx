@@ -130,7 +130,7 @@ export default function Resume() {
                             <div className="flex gap-y-5 gap-x-2.5 flex-wrap">
                                 <button className="resume-btn">Javascript</button>
                                 <button className="resume-btn">ReactJS</button>
-                                <button className="resume-btn">ExpressKS</button>
+                                <button className="resume-btn">ExpressJS</button>
                                 <button className="resume-btn">MongoDB</button>
                                 <button className="resume-btn">MERN Stack</button>
                                 <button className="resume-btn">Node.js</button>
